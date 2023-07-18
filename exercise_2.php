@@ -50,11 +50,11 @@
         $celsius = floor(($fahrenheit - 32) * (5 / 9));
         if ($celsius < 5) {
             $result = "<div class = 'd-flex justify-content-center align-items-center'> $fahrenheit °F is " . $celsius . " °C. Today is very cold</div>";
-        } elseif ($celsius > 6 && $celsius < 10) {
+        } elseif ($celsius < 6 && $celsius < 10) {
             $result = "<div class = 'd-flex justify-content-center align-items-center'> $fahrenheit °F is " . $celsius . " °C. Today is quite cold</div>";
-        } elseif ($celsius > 11 && $celsius < 15) {
+        } elseif ($celsius < 11 && $celsius < 15) {
             $result = "<div class = 'd-flex justify-content-center align-items-center'> $fahrenheit °F is " . $celsius . " °C. Today is very plesant</div>";
-        } elseif ($celsius > 16 && $celsius < 25) {
+        } elseif ($celsius < 16 && $celsius < 25) {
             $result = "<div class = 'd-flex justify-content-center align-items-center'> $fahrenheit °F is " . $celsius . " °C. Today is warm</div>";
         } else {
             $result = "<div class = 'd-flex justify-content-center align-items-center'> $fahrenheit °F is " . $celsius . " °C. Today is very hot</div>";
